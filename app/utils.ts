@@ -295,6 +295,8 @@ export function supportsCustomSize(model: string): boolean {
 }
 
 export function showPlugins(provider: ServiceProvider, model: string) {
+  // always show
+  return true;
   if (
     provider == ServiceProvider.OpenAI ||
     provider == ServiceProvider.Azure ||
